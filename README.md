@@ -34,11 +34,11 @@ DNS operates through a hierarchical and distributed network of servers, ensuring
 
 * **Recursive Resolver:** This server acts as your initial contact point. When you type a domain name into your browser, it sends a query to the recursive resolver. Most internet service providers (ISPs) operate their own recursive resolvers for their users.
 
-* **Root Nameservers:** These are the foundation of the DNS hierarchy, acting as the phonebook directory. There are currently 13 root nameservers, geographically dispersed for redundancy. They don't store actual IP addresses but point the recursive resolver to the appropriate TLD nameserver.
+* **Root Nameservers:** These are the foundation of the DNS hierarchy, acting as the phonebook directory. There are [currently 13 root nameservers](https://www.iana.org/domains/root/servers), geographically dispersed for redundancy. They don't store actual IP addresses but point the recursive resolver to the appropriate TLD nameserver.
 
-* **TLD Nameservers:** These servers manage specific top-level domains like .com, .org, etc. They hold information on the nameservers responsible for the second-level domains within their TLD.
+* **TLD Nameservers:** These servers manage specific [top-level domains](https://en.wikipedia.org/wiki/Top-level_domain) like .com, .org, etc. They hold information on the nameservers responsible for the second-level domains within their TLD.
 
-* **Authoritative Nameservers:** These are the servers that hold the actual DNS records for a particular domain name. They contain the mapping between the domain name and its corresponding IP address, acting as the source of truth for that domain. These servers are typically managed by the domain name registrar or the website owner.
+* **Authoritative Nameservers:** These are the [servers](https://www.ibm.com/docs/en/zos/3.1.0?topic=servers-authoritative) that hold the actual DNS records for a particular domain name. They contain the mapping between the domain name and its corresponding IP address, acting as the source of truth for that domain. These servers are typically managed by the domain name registrar or the website owner.
 
 ## The DNS Lookup Process: Behind the Scenes
 
@@ -74,9 +74,9 @@ Here's a simplified breakdown of how a DNS lookup works:
 </p>
 </figure>
 
-* **Mail Server Lookups (MX Records):** These records specify the mail servers responsible for receiving emails for a particular domain. When you send an email to [email address removed], DNS uses MX records to locate the correct server to deliver your message.
+* **Mail Server Lookups (MX Records):** These records specify the mail servers responsible for receiving emails for a particular domain. When you send an email to [toriqul.int@gmail.com](mailto:toriqul.int@gmail.com), DNS uses MX records to locate the correct server to deliver your message.
 
-* **Subdomain Management (CNAME Records):** A website can have subdomains like [invalid URL removed] or [invalid URL removed]. CNAME records allow you to point a subdomain to another domain name, essentially creating an alias.
+* **Subdomain Management (CNAME Records):** A website can have subdomains like [https://thetoriqul.netlify.app/](https://thetoriqul.netlify.app/). CNAME records allow you to point a subdomain to another domain name, essentially creating an alias.
 
 * **Load Balancing (A Records and DNS Round Robin):** Websites with high traffic might have multiple servers hosting the same content. DNS can distribute incoming requests among these servers using A records and a technique called round robin. This ensures smoother performance and prevents overloading any single server.
 
