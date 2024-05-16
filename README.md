@@ -3,7 +3,11 @@
 The internet, a vast and intricate network connecting billions of devices globally, thrives on the seamless exchange of information. But have you ever wondered how you access your favorite website with just a few words typed into a browser? This magic is powered by the Domain Name System, or DNS, the unsung hero of the internet.
 
 Imagine the internet as a giant city. Every house (device) has a unique address (IP address) that allows others to find it. However, remembering a string of numbers for each website would be cumbersome. DNS acts like a phonebook for this city, translating user-friendly domain names (like [invalid URL removed]) into the corresponding IP addresses that computers understand.
-
+<figure > 
+<p align="center">
+  <img src="./DNS.jpg" alt="" />
+</p>
+</figure>
 The Domain Name System is a core part of the Internet. The domain name system, or simply DNS, may not be something you think of everyday. However, DNS is an essential piece of what makes the internet usable. When DNS is working properly, it's enough to type out a domain name into the URL bar in order to open a website, but if it weren't for DNS, we'd have to type in the IP address associated with that website in order to open it. There are many processes running in the background while you're doing something as simple as catching up on a blog like this one. One of the most important processes in simple web browsing is performed mostly by DNS servers, yet many developers have never learned much more than the name of one (or maybe two) DNS servers. Let's change that today.
 
 ## Demystifying Domain Names and IP Addresses
@@ -17,7 +21,11 @@ The Domain Name System is a core part of the Internet. The domain name system, o
     * **IPv6:** The newer version, with a more complex alphanumeric format to accommodate the ever-growing internet (e.g., 2400:cb00:2048:1::c629:d7a2).
 
 ## The DNS Hierarchy: A Collaborative Effort
-
+<figure > 
+<p align="center">
+  <img src="./DNS_hierarchy.png" alt="" />
+</p>
+</figure>
 DNS operates through a hierarchical and distributed network of servers, ensuring efficient and reliable translation of domain names to IP addresses. Let's explore the key players in this system:
 
 * **Recursive Resolver:** This server acts as your initial contact point. When you type a domain name into your browser, it sends a query to the recursive resolver. Most internet service providers (ISPs) operate their own recursive resolvers for their users.
@@ -29,7 +37,11 @@ DNS operates through a hierarchical and distributed network of servers, ensuring
 * **Authoritative Nameservers:** These are the servers that hold the actual DNS records for a particular domain name. They contain the mapping between the domain name and its corresponding IP address, acting as the source of truth for that domain. These servers are typically managed by the domain name registrar or the website owner.
 
 ## The DNS Lookup Process: Behind the Scenes
-
+<figure > 
+<p align="center">
+  <img src="./DNS_Server.png" alt="" />
+</p>
+</figure>
 Here's a simplified breakdown of how a DNS lookup works:
 
 1. **User initiates a request:** You type a domain name (e.g., wikipedia.org) into your browser.
@@ -49,7 +61,11 @@ Here's a simplified breakdown of how a DNS lookup works:
 **Caching for Efficiency:** To optimize performance, resolvers often cache recently looked up DNS records. This means subsequent requests for the same domain name might not require a complete lookup process, as the IP address is readily available in the cache.
 
 ## Beyond Basic Lookups: Additional DNS Functions
-
+<figure > 
+<p align="center">
+  <img src="./dns-records.png" alt="" />
+</p>
+</figure>
 * **Mail Server Lookups (MX Records):** These records specify the mail servers responsible for receiving emails for a particular domain. When you send an email to [email address removed], DNS uses MX records to locate the correct server to deliver your message.
 
 * **Subdomain Management (CNAME Records):** A website can have subdomains like [invalid URL removed] or [invalid URL removed]. CNAME records allow you to point a subdomain to another domain name, essentially creating an alias.
