@@ -2,7 +2,7 @@
 
 The internet, a vast and intricate network connecting billions of devices globally, thrives on the seamless exchange of information. But have you ever wondered how you access your favorite website with just a few words typed into a browser? This magic is powered by the Domain Name System, or DNS, the unsung hero of the internet.
 
-Imagine the internet as a giant city. Every house (device) has a unique address (IP address) that allows others to find it. However, remembering a string of numbers for each website would be cumbersome. DNS acts like a phonebook for this city, translating user-friendly domain names (like [invalid URL removed]) into the corresponding IP addresses that computers understand.
+Imagine the internet as a giant city. Every house (device) has a unique address (IP address) that allows others to find it. However, remembering a string of numbers for each website would be cumbersome. DNS acts like a phonebook for this city, translating user-friendly domain names (like [google.com](https://google.com)) into the corresponding IP addresses that computers understand.
 <figure > 
 <p align="center">
   <img src="./DNS.jpg" alt="" />
